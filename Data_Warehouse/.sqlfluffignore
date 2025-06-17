@@ -1,0 +1,6 @@
+airflow_dags/
+dbt_modules/
+dbt_packages/
+macros/
+models/.dbt_audit/
+target/
