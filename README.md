@@ -10,4 +10,7 @@ This repository demonstrates my expertise in building robust, scalable, and anal
 - End-to-end ELT pipeline orchestration and automation
 - Collaboration, code reviews, and scalable analytics workflows
 
-![image](https://github.com/user-attachments/assets/7aaaf98b-65f0-4aa9-abf3-9fcd84fea539)
+
+# ![image](https://github.com/user-attachments/assets/7aaaf98b-65f0-4aa9-abf3-9fcd84fea539)   ![image](https://github.com/user-attachments/assets/7eba54e3-703a-48f0-a807-325c318bf37b)
+
+
