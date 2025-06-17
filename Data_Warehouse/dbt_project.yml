@@ -45,10 +45,10 @@ models:
       +schema: staging
     analytics:
       +tags: analytics
-      gates:
-        +materialized: table
-        +schema: gates
-        +tags: gates
+      gate:
+        +materialized: view
+        +schema: analytics_gate
+        +tags: analytics_gate
       marts:
         +materialized: table
         +schema: marts

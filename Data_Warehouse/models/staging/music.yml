@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: music
+    description: "Source data from Music database"
+    schema: public
+    tables:
+      - name: customers
+        description: "Customer data from Music database"
+        identifier: customers
+      - name: employee
+        description: "Employee data from Music database"
+        identifier: employee
+      - name: invoice
+        description: "Invoice data from Music database"
+        identifier: invoice
