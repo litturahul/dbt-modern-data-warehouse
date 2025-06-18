@@ -1,0 +1,65 @@
+version: 2
+
+models:
+  - name: cube_customers
+    description: This model contains customer and their aggregated invoice related details.
+    tests:
+      - rows_fewer_than:
+          threshold: 50
+          target_env: dev
+    columns:
+      - name: customer_id
+        description: the unique identifier for each customer in music system
+        tests:
+          - unique
+          - not_null
+      - name: first_name
+        description: the first name of the customer
+        tests:
+          - not_null
+      - name: last_name
+        description: the last name of the customer
+        tests:
+          - not_null
+      - name: address
+        description: the address of the customer
+        tests:
+          - not_null
+      - name: city
+        description: the city where the customer is located
+        tests:
+          - not_null
+      - name: state
+        description: the state where the customer is located
+        tests:
+          - not_null
+      - name: country
+        description: the country where the customer is located
+        tests:
+          - not_null
+      - name: postal_code
+        description: the postal code of the customer's address
+        tests:
+          - not_null
+      - name: phone
+        description: the phone number of the customer
+        tests:
+          - not_null
+      - name: fax
+        description: the fax number of the customer, if applicable
+      - name: email
+        description: the email address of the customer
+        tests:
+          - not_null
+      - name: invoice_count
+        description: the total number of invoices associated with the customer
+        tests:
+          - not_null
+      - name: total_spent
+        description: the total amount spent by the customer across all invoices
+        tests:
+          - not_null
+      - name: max_updated_at
+        description: the timestamp when the customer record was last updated
+        tests:
+          - not_null
