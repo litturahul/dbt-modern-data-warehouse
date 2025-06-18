@@ -1,29 +1,25 @@
 {{ 
-  config(unique_key=["customer_id"], 
-  sort=["_last_updated_at"])
+  config(unique_key=["invoice_id"], 
+  sort=["invoice_at", "_last_updated_at"])
 }}
 
-WITH customers AS (
-  SELECT * FROM {{ ref('ag__customers') }}
+WITH invoices AS (
+  SELECT * FROM {{ ref('ag__invoices') }}
 ),
 
 final AS (
   SELECT
+    invoice_id,
     customer_id,
-    first_name,
-    last_name,
-    company,
+    invoice_at,
     address,
     city,
     state,
     country,
     postal_code,
-    phone,
-    fax,
-    email,
-    support_rep_id,
+    total,
     _last_updated_at
-  FROM customers
+  FROM invoices
 )
 
 SELECT * FROM final

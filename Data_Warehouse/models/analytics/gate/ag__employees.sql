@@ -10,7 +10,7 @@ final AS (
     "Title" AS title,
     "ReportsTo",
     {{ mask_pii('TRIM("BirthDate")') }} AS birth_date,
-    "HireDate" AS hire_date,
+    "HireDate"::TIMESTAMP AS hire_date,
     {{ mask_pii('TRIM("Address")') }} AS address,
     "City" AS city,
     "State" AS state,
@@ -19,7 +19,7 @@ final AS (
     {{ mask_pii('TRIM("Phone")') }} AS phone,
     {{ mask_pii('TRIM("Fax")') }} AS fax,
     {{ mask_pii('TRIM("Email")') }} AS email,
-    stg_updated_at AS _last_updated_at
+    stg_updated_at::TIMESTAMP AS _last_updated_at
   FROM employees
 )
 

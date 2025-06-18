@@ -17,7 +17,7 @@ final AS (
     {{ mask_pii('TRIM("Fax")') }} AS fax,
     {{ mask_pii('TRIM("Email")') }} AS email,
     "SupportRepId" AS support_rep_id,
-    "stg_updated_at" AS _last_updated_at
+    "stg_updated_at"::TIMESTAMP AS _last_updated_at
   FROM customers
 )
 
