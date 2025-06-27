@@ -17,3 +17,4 @@ models/.dbt_audit/*
 target/
 dbt_packages/
 logs/
+marketing_data/

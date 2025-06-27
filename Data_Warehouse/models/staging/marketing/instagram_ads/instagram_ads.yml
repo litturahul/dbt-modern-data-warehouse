@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  - name: fivetran_instagram
+    description: "Source data from Meta instagram Ads"
+    schema: public
+    loader: Fivetran
+    tables:
+      - name: media_comment
+        description: "Media comment data from Meta Instagram Ads"
+        identifier: media_comment
+      - name: media_history
+        description: "Media history data from Meta Instagram Ads"
+        identifier: media_history
+      - name: media_insights
+        description: "Media insights data from Meta Instagram Ads"
+        identifier: media_insights
+      - name: user_history
+        description: "User history data from Meta Instagram Ads"
+        identifier: user_history
+      - name: user_insights
+        description: "User insights data from Meta Instagram Ads"
+        identifier: user_insights
+      - name: user_lifetime_insights
+        description: "User lifetime insights data from Meta Instagram Ads"
+        identifier: user_lifetime_insights

@@ -1,0 +1,203 @@
+version: 2
+
+sources:
+  - name: fivetran_facebook
+    description: "Source data from Meta Facebook Ads"
+    schema: public
+    loader: Fivetran
+    tables:
+      - name: account_history
+        description: "Account history data from Meta Facebook Ads"
+        identifier: account_history
+      - name: action_canvas_component
+        description: "Action canvas component data from Meta Facebook Ads"
+        identifier: action_canvas_component
+      - name: action_carousel_card
+        description: "Action carousel card data from Meta Facebook Ads"
+        identifier: action_carousel_card
+      - name: action_conversion_device
+        description: "Action conversion device data from Meta Facebook Ads"
+        identifier: action_conversion_device
+      - name: action_reactions
+        description: "Action reactions data from Meta Facebook Ads"
+        identifier: action_reactions
+      - name: action_reactions_actions
+        description: "Action reactions actions data from Meta Facebook Ads"
+        identifier: action_reactions_actions
+      - name: action_video_sound
+        description: "Action video sound data from Meta Facebook Ads"
+        identifier: action_video_sound
+      - name: action_video_view_type
+        description: "Action video view type data from Meta Facebook Ads"
+        identifier: action_video_view_type
+      - name: action_video_view_type_video_avg_time_watched_actions
+        description: "Action video view type video avg time watched actions data from Meta Facebook Ads"
+        identifier: action_video_view_type_video_avg_time_watched_actions
+      - name: ad_conversion
+        description: "Ad conversion data from Meta Facebook Ads"
+        identifier: ad_conversion
+      - name: ad_history
+        description: "Ad history data from Meta Facebook Ads"
+        identifier: ad_history
+      - name: ad_image_history
+        description: "Ad image history data from Meta Facebook Ads"
+        identifier: ad_image_history
+      - name: ad_set_attribution
+        description: "Ad set attribution data from Meta Facebook Ads"
+        identifier: ad_set_attribution
+      - name: ad_set_history
+        description: "Ad set history data from Meta Facebook Ads"
+        identifier: ad_set_history
+      - name: ad_tracking
+        description: "Ad tracking data from Meta Facebook Ads"
+        identifier: ad_tracking
+      - name: ad_video_history
+        description: "Ad video history data from Meta Facebook Ads"
+        identifier: ad_video_history
+      - name: ad_video_thumbnail
+        description: "Ad video thumbnail data from Meta Facebook Ads"
+        identifier: ad_video_thumbnail
+      - name: basic_ad
+        description: "Basic ad data from Meta Facebook Ads"
+        identifier: basic_ad
+      - name: basic_ad_actions
+        description: "Basic ad actions data from Meta Facebook Ads"
+        identifier: basic_ad_actions
+      - name: basic_ad_cost_per_action_type
+        description: "Basic ad cost per action type data from Meta Facebook Ads"
+        identifier: basic_ad_cost_per_action_type
+      - name: basic_ad_set
+        description: "Basic ad set data from Meta Facebook Ads"
+        identifier: basic_ad_set
+      - name: basic_ad_set_actions
+        description: "Basic ad set actions data from Meta Facebook Ads"
+        identifier: basic_ad_set_actions
+      - name: basic_ad_set_cost_per_action_type
+        description: "Basic ad set cost per action type data from Meta Facebook Ads"
+        identifier: basic_ad_set_cost_per_action_type
+      - name: basic_all_levels
+        description: "Basic all levels data from Meta Facebook Ads"
+        identifier: basic_all_levels
+      - name: basic_all_levels_actions
+        description: "Basic all levels actions data from Meta Facebook Ads"
+        identifier: basic_all_levels_actions
+      - name: basic_all_levels_cost_per_action_type
+        description: "Basic all levels cost per action type data from Meta Facebook Ads"
+        identifier: basic_all_levels_cost_per_action_type
+      - name: basic_campaign
+        description: "Basic campaign data from Meta Facebook Ads"
+        identifier: basic_campaign
+      - name: basic_campaign_actions
+        description: "Basic campaign actions data from Meta Facebook Ads"
+        identifier: basic_campaign_actions
+      - name: basic_campaign_cost_per_action_type
+        description: "Basic campaign cost per action type data from Meta Facebook Ads"
+        identifier: basic_campaign_cost_per_action_type
+      - name: campaign_history
+        description: "Campaign history data from Meta Facebook Ads"
+        identifier: campaign_history
+      - name: creative_history
+        description: "Creative history data from Meta Facebook Ads"
+        identifier: creative_history
+      - name: delivery_device
+        description: "Delivery device data from Meta Facebook Ads"
+        identifier: delivery_device
+      - name: delivery_device_actions
+        description: "Delivery device actions data from Meta Facebook Ads"
+        identifier: delivery_device_actions
+      - name: delivery_device_cost_per_action_type
+        description: "Delivery device cost per action type data from Meta Facebook Ads"
+        identifier: delivery_device_cost_per_action_type
+      - name: delivery_platform
+        description: "Delivery platform data from Meta Facebook Ads"
+        identifier: delivery_platform
+      - name: delivery_platform_actions
+        description: "Delivery platform actions data from Meta Facebook Ads"
+        identifier: delivery_platform_actions
+      - name: delivery_platform_and_device
+        description: "Delivery platform and device data from Meta Facebook Ads"
+        identifier: delivery_platform_and_device
+      - name: delivery_platform_and_device_actions
+        description: "Delivery platform and device actions data from Meta Facebook Ads"
+        identifier: delivery_platform_and_device_actions
+      - name: delivery_platform_and_device_cost_per_action_type
+        description: "Delivery platform and device cost per action type data from Meta Facebook Ads"
+        identifier: delivery_platform_and_device_cost_per_action_type
+      - name: delivery_platform_cost_per_action_type
+        description: "Delivery platform cost per action type data from Meta Facebook Ads"
+        identifier: delivery_platform_cost_per_action_type
+      - name: delivery_purchase_roas
+        description: "Delivery purchase ROAS data from Meta Facebook Ads"
+        identifier: delivery_purchase_roas
+      - name: demographics_age
+        description: "Demographics age data from Meta Facebook Ads"
+        identifier: demographics_age
+      - name: demographics_age_actions
+        description: "Demographics age actions data from Meta Facebook Ads"
+        identifier: demographics_age_actions
+      - name: demographics_age_and_gender
+        description: "Demographics age and gender data from Meta Facebook Ads"
+        identifier: demographics_age_and_gender
+      - name: demographics_age_and_gender_actions
+        description: "Demographics age and"
+        identifier: demographics_age_and_gender_actions
+      - name: demographics_age_and_gender_cost_per_action_type
+        description: "Demographics age and"
+        identifier: demographics_age_and_gender_cost_per_action_type
+      - name: demographics_age_cost_per_action_type
+        description: "Demographics age cost per action type data from Meta Facebook Ads"
+        identifier: demographics_age_cost_per_action_type
+      - name: demographics_country
+        description: "Demographics country data from Meta Facebook Ads"
+        identifier: demographics_country
+      - name: demographics_country_actions
+        description: "Demographics country actions data from Meta Facebook Ads"
+        identifier: demographics_country_actions
+      - name: demographics_country_cost_per_action_type
+        description: "Demographics country cost per action type data from Meta Facebook Ads"
+        identifier: demographics_country_cost_per_action_type
+      - name: demographics_dma_region
+        description: "Demographics DMA region data from Meta Facebook Ads"
+        identifier: demographics_dma_region
+      - name: demographics_dma_region_actions
+        description: "Demographics DMA region actions data from Meta Facebook Ads"
+        identifier: demographics_dma_region_actions
+      - name: demographics_dma_region_cost_per_action_type
+        description: "Demographics DMA region cost per action type data from Meta Facebook Ads"
+        identifier: demographics_dma_region_cost_per_action_type
+      - name: demographics_gender
+        description: "Demographics"
+        identifier: demographics_gender
+      - name: demographics_gender_actions
+        description: "Demographics"
+        identifier: demographics_gender_actions
+      - name: demographics_gender_cost_per_action_type
+        description: "demographics_gender_cost_per_action_type data from Meta Facebook Ads"
+        identifier: demographics_gender_cost_per_action_type
+      - name: demographics_region
+        description: "Demographics region data from Meta Facebook Ads"
+        identifier: demographics_region
+      - name: demographics_region_actions
+        description: "Demographics region actions data from Meta Facebook Ads"
+        identifier: demographics_region_actions
+      - name: demographics_region_cost_per_action_type
+        description: "Demographics region cost per action type data from Meta Facebook Ads"
+        identifier: demographics_region_cost_per_action_type
+      - name: failed_delivery_checks
+        description: "Failed delivery checks data from Meta Facebook Ads"
+        identifier: failed_delivery_checks
+      - name: frequency_control
+        description: "Frequency control data from Meta Facebook Ads"
+        identifier: frequency_control
+      - name: marketing_mix_modeling
+        description: "Marketing mix modeling data from Meta Facebook Ads"
+        identifier: marketing_mix_modeling
+      - name: pacing_type
+        description: "Pacing type data from Meta Facebook Ads"
+        identifier: pacing_type
+      - name: reach_frequency
+        description: "Reach frequency data from Meta Facebook Ads"
+        identifier: reach_frequency
+      - name: targeting_optimization_types
+        description: "Targeting optimization types data from Meta Facebook Ads"
+        identifier: targeting_optimization_types

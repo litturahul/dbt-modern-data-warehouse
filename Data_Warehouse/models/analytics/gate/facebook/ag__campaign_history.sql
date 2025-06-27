@@ -1,0 +1,57 @@
+WITH source AS (
+  SELECT * FROM {{ source('fivetran_facebook', 'campaign_history') }}
+),
+
+final AS (
+  SELECT
+    id,
+    updated_time,
+    account_id,
+    source_campaign_id,
+    bid_strategy,
+    boosted_object_id,
+    budget_rebalance_flag,
+    budget_remaining,
+    buying_type,
+    can_create_brand_lift_study,
+    can_use_spend_cap,
+    configured_status,
+    created_time,
+    daily_budget,
+    effective_status,
+    is_skadnetwork_attribution,
+    last_budget_toggling_time,
+    lifetime_budget,
+    "name",
+    objective,
+    smart_promotion_type,
+    special_ad_category,
+    spend_cap,
+    start_time,
+    status,
+    stop_time,
+    topline_id,
+    pacing_type,
+    special_ad_categories,
+    special_ad_category_country,
+    promoted_object_application_id,
+    promoted_object_custom_conversion_id,
+    promoted_object_custom_event_str,
+    promoted_object_custom_event_type,
+    promoted_object_event_id,
+    promoted_object_object_store_url,
+    promoted_object_offer_id,
+    promoted_object_offline_conversion_data_set_id,
+    promoted_object_page_id,
+    promoted_object_pixel_aggregation_rule,
+    promoted_object_pixel_id,
+    promoted_object_pixel_rule,
+    promoted_object_place_page_set_id,
+    promoted_object_product_catalog_id,
+    promoted_object_product_set_id,
+    promoted_object_retention_days,
+    "_fivetran_synced"
+  FROM source
+)
+
+SELECT * FROM final
