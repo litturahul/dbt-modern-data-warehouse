@@ -4,7 +4,7 @@ WITH source AS (
 
 final AS (
   SELECT
-    adset_id,
+    adset_id::BIGINT AS adset_id,
     "date",
     account_id,
     impressions,
@@ -18,7 +18,7 @@ final AS (
     spend,
     adset_name,
     campaign_name,
-    inline_link_click_ctr,
+    inline_link_click_ctr::FLOAT AS inline_link_click_ctr,
     "_fivetran_id",
     "_fivetran_synced"
   FROM source
