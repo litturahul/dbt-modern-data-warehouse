@@ -4,7 +4,7 @@ WITH source AS (
 
 final AS (
   SELECT
-    id,
+    id AS account_id,
     age,
     amount_spent,
     balance,
@@ -33,7 +33,7 @@ final AS (
     media_agency,
     min_campaign_group_spend_cap,
     min_daily_budget,
-    "name",
+    "name" AS account_name,
     next_bill_date,
     offsite_pixels_tos_accepted,
     "owner",
@@ -98,6 +98,10 @@ final AS (
     funding_source_details_original_display_amount,
     funding_source_details_type,
     capabilities,
+    ROW_NUMBER() OVER (
+      PARTITION BY id
+      ORDER BY age DESC
+    ) = 1 AS is_latest_value,
     "_fivetran_id",
     "_fivetran_synced"
   FROM source
