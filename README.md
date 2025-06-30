@@ -95,6 +95,35 @@ This project implements a robust, modular ELT (Extract, Load, Transform) pipelin
 - Git-ready project structure with .gitkeep and .gitignore for clean repository management.
 - CI/CD integration for automated testing and deployment.
 
+## 📂 Project Structure
+```
+├── models/
+│   └── staging/
+│   │   └── marketing/
+│   │       ├── facebook/
+│   │       └── instagram/
+│   └── analytics/
+│       ├── eda/
+│       │   ├── over_all_trend/
+│       │   ├── growth/
+│       │   ├── performance/
+│       │   └── kpi_reporting/
+│       ├── gates/
+│       │   ├── facebook/
+│       │   └── instagram/
+│       ├── marts/
+│       └── reports/
+├── macros/
+│   ├── utils.sql
+│   ├── mask_pii.sql
+│   └── descriptive_stats.sql
+├── tests/
+│   └── alert_rows_greater_than.sql
+├── dbt_project.yml
+└── README.md
+```
+
+
 ## 🚀 Advanced Analytics Capabilities
 
 #### Exploratory Data Analysis (EDA):
