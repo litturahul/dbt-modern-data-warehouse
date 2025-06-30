@@ -1,4 +1,4 @@
-WITH source AS )(
+WITH source AS (
   SELECT * FROM {{ source('fivetran_facebook', 'basic_ad') }}
 ),
 

@@ -1,6 +1,6 @@
 WITH source AS (
   SELECT * FROM {{ source('fivetran_instagram', 'user_history') }}
-)
+),
 
 final AS (
   SELECT

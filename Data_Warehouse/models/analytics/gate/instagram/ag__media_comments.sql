@@ -15,7 +15,7 @@ final AS (
     created_time,
     "_fivetran_id",
     "_fivetran_synced"
-  FROM final
+  FROM source
 )
 
 SELECT * FROM final

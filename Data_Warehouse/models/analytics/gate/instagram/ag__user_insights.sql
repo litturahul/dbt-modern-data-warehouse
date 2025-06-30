@@ -1,5 +1,5 @@
 WITH source AS (
-  SELECT * FROM {{ source('fivetran_instagram', 'user_history') }}
+  SELECT * FROM {{ source('fivetran_instagram', 'user_insights') }}
 ),
 
 final AS (
